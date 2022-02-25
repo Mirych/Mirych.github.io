@@ -1,1 +1,246 @@
-hi there
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ибрагимов Амир </title>
+    <meta name="description" content="Web developer personal page">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./icons/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="./css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro&amp;display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="sprite" style="display:none">
+      <symbol id="icon-radio-checked" viewBox="0 0 32 32">
+        <title>radio-checked</title>
+        <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12zM10 16c0-3.314 2.686-6 6-6s6 2.686 6 6c0 3.314-2.686 6-6 6s-6-2.686-6-6z"></path>
+      </symbol>
+      <symbol id="icon-radio-unchecked" viewBox="0 0 32 32">
+        <title>radio-unchecked</title>
+        <path d="M16 0c-8.837 0-16 7.163-16 16s7.163 16 16 16 16-7.163 16-16-7.163-16-16-16zM16 28c-6.627 0-12-5.373-12-12s5.373-12 12-12c6.627 0 12 5.373 12 12s-5.373 12-12 12z">     </path>
+      </symbol>
+      <symbol id="icon-close-menu" viewBox="0 0 32 32">
+        <title>close</title>
+        <path d="M19.414 27.414l10-10c0.781-0.781 0.781-2.047 0-2.828l-10-10c-0.781-0.781-2.047-0.781-2.828 0s-0.781 2.047 0 2.828l6.586 6.586h-19.172c-1.105 0-2 0.895-2 2s0.895 2 2 2h19.172l-6.586 6.586c-0.39 0.39-0.586 0.902-0.586 1.414s0.195 1.024 0.586 1.414c0.781 0.781 2.047 0.781 2.828 0z"></path>
+      </symbol>
+    </svg>
+    <div class="body-cover-bg body-cover-bg_hidden"></div>
+    <div class="lang-container" style="display:none">
+      <button class="lang-button">
+        <svg class="icon-translate" id="icon-translate" viewBox="0 0 20 20">
+          <title>translate</title>
+          <path d="M7.41 9l2.24 2.24-0.83 2-2.82-2.84-3.3 3.3-1.4-1.42 3.28-3.28-0.88-0.88c-0.53-0.53-1-1.3-1.3-2.12h2.2c0.15 0.28 0.33 0.53 0.51 0.7l0.89 0.9 0.88-0.88c0.6-0.62 1.12-1.88 1.12-2.72h-8v-2h5v-2h2v2h5v2h-2c0 1.37-0.74 3.15-1.7 4.12l-0.9 0.88zM11.25 17l-1.25 3h-2l5-12h2l5 12h-2l-1.25-3h-5.5zM12.080 15h3.84l-1.92-4.6-1.92 4.6z"></path>
+        </svg><span class="lang-button__caption">Translate</span>
+      </button>
+      <aside class="lang-menu lang-menu_hidden">
+        <ul class="lang-menu__list">
+          <li class="lang-menu__item"> 
+            <label class="lang-menu__label" data-lang="/">
+              <input class="lang-menu__input radio__en" type="radio" name="radio-lang" checked>
+              <svg class="lang-menu__radio-icon unchecked">
+                <use xlink:href="#icon-radio-unchecked"></use>
+              </svg>
+              <svg class="lang-menu__radio-icon checked">
+                <use xlink:href="#icon-radio-checked"></use>
+              </svg>English
+            </label>
+          </li>
+          <li class="lang-menu__item"> 
+            <label class="lang-menu__label" data-lang="/ru">
+              <input class="lang-menu__input radio__ru" type="radio" name="radio-lang">
+              <svg class="lang-menu__radio-icon unchecked">
+                <use xlink:href="#icon-radio-unchecked"></use>
+              </svg>
+              <svg class="lang-menu__radio-icon checked">
+                <use xlink:href="#icon-radio-checked"></use>
+              </svg>Русский  
+            </label>
+          </li>
+        </ul>
+      </aside>
+    </div>
+    <main class="main">
+      <section class="section about-section">
+        <div class="section-wrapper">
+          <div class="section__title-wrapper">
+            <h2 class="section__title section__title">Обо мне</h2>
+          </div>
+          <div class="content"> 
+            <div class="photo-content">
+                <img class="photo-content_img" src="./img/me.jpeg" alt="personal-photo">
+            </div>
+            <div class="text-block">
+              <p class="text-content">
+                Меня зовут Ибрагимов Амир, я из города Казань, Россия.
+                Закончил КНИТУ по специальности математик-программист.
+                Начиная с простых landing на фрилансе дорос до разработки
+                сложных порталов в командах.
+                Ищу компанию, в которой я бы смог развить свои технические скиллы,
+                используя современный стек, перенимая опыт у более опытных коллег,
+                не забывая привносить чистый код, вовлеченность в процесс и результат.
+                Жил полгода в Америке, английский upper-intermediate.
+              </p>
+              <ul class="skills-list">
+                <li class="skills-item main-skills">
+                    <span class="label_bold">Главные навыки: </span>
+                    <span class="label">
+                        JS, CSS, HTML, Vue.js, Laravel, Git
+                    </span>
+                </li>
+                <li class="skills-item add-exp"> 
+                    <span class="label_bold">Работал с: </span>
+                    <span class="label">
+                        PHP, SQL, Laravel Mix, Blade, Chart.js, REST API, Docker, npm,
+                        Mysql, Postgres, Bootstrap, SASS, Photoshop, Figma, Sketch, Jira
+                    </span>
+                  </li>
+                </ul>   
+                <p class="anchors">Быстрый переход к <a class="label_bold" href="#portfolio"> портфолио</a>, <a class="label_bold" href="#career"> опыту работы </a> или <a class="label_bold" href="#contacts"> контактам</a>.</p>             
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section portfolio-section section_bg-yellow hidden" id="portfolio"> 
+        <div class="section-wrapper">
+          <div class="section__title-wrapper">
+            <h2 class="section__title">Портфолио</h2>
+          </div>
+          <ul class="cards">
+            <!-- <li class="card card_tiny">
+              <picture class="lazy">
+              </picture>
+              <div class="card-description">
+                <h3 class="card-description__title"><span class="card-description__title_type">name</span><span class="card-description__title_name">NAME</span></h3>
+                <div class="card-links"> 
+                  <ul class="cald-links_list">
+                    <li class="card-links_item"><a class="card-link demo" href="#" target="_blank" rel="noopener">View Demo</a></li>
+                    <li class="card-links_item"><a class="card-link code" href="#" target="_blank" rel="noopener">View Code</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+            <li class="card card_note">
+              <picture class="lazy">
+              </picture>
+              <div class="card-description">
+                <h3 class="card-description__title"><span class="card-description__title_type">Web Application </span><span class="card-description__title_name">NAME</span></h3>
+                <div class="card-links"> 
+                  <ul class="cald-links_list">
+                    <li class="card-links_item"><a class="card-link demo" href="" target="_blank" rel="noopener">View Demo</a></li>
+                    <li class="card-links_item"><a class="card-link code" href="" target="_blank" rel="noopener">View Code</a></li>
+                  </ul>
+                </div>
+              </div>
+            </li> -->
+            <li class="card card_memory">
+              <picture class="lazy">
+                <img class="card_img" src="./img/memory.png" alt="application_photo">
+              </picture>
+              <div class="card-description">
+                <h3 class="card-description__title"><span class="card-description__title_type">Web Application</span><span class="card-description__title_name">Movie App</span></h3></br><span>React + API IMDB</span></h3>                
+                <div class="card-links"> 
+                  <ul class="cald-links_list">
+                    <!-- <li class="card-links_item"><a class="card-link demo" href="#" target="_blank" rel="noopener">View Demo</a></li> -->
+                    <li class="card-links_item"><a class="card-link code" href="https://github.com/Mirych/watchlist" target="_blank" rel="noopener">View Code</a></li>
+                  </ul>
+                </div>                
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="section resume-section hidden" id="career"> 
+        <div class="section-wrapper">
+          <div class="section__title-wrapper">
+            <h2 class="section__title section__title_green-bg">Образование & Опыт работы</h2>
+          </div>
+          <div class="resume-section_timeline-block"> 
+            <ul class="jobs-list">
+              <li class="job-list_item bars-group">
+                <div class="job-item_text">
+                  <h3><span class="job-list__title">Барс Груп</span><span class="job-item_period">Апрель 2019 - Май 2019</span></h3>
+                  <p class="paragraph position"> <span class="label_bold">Должность: </span><span class="label">Стажировка Frontend разработчика </span></p>
+                  <p class="paragraph stack">    <span class="label_bold">Стек: </span><span class="label">JS, SQL, HTML, CSS</span></p>
+                  <p class="paragraph achiev"> <span class="label_bold">Достижения: </span>
+                    <span class="label">
+                      Исправление ошибок на сайте всероссийской мед. клиники с помощью JS, SQL.
+                      Отчет в Jira. Правки на HTML, CSS.
+                    </span></p>
+                  <footer class="job-list-item_footer"> 
+                    <ul class="company-info-list">                      
+                      <li class="company-info-list_item"><a class="company-info_link" href="https://bars.group/" target="_blank" rel="noopener">Сайт</a></li>
+                    </ul>
+                  </footer>
+                </div>
+              </li>
+              <li class="job-list_item html-academy">
+                <div class="job-item_text">
+                  <h3><span class="job-list__title">КНИТУ</span><span class="job-item_period">2015 - Июнь 2020</span></h3>
+                  <p class="paragraph"> <span class="label_bold">Образование: </span><span class="label">Высшее по специальности математик-программист.</span></p>
+                  <footer class="job-list-item_footer"> 
+                    <ul class="company-info-list">                      
+                      <li class="company-info-list_item"><a class="company-info_link" href="https://www.kstu.ru/" target="_blank" rel="noopener">Сайт</a></li>
+                    </ul>
+                  </footer>
+                </div>
+              </li>             
+              <li class="job-list_item bars-group">
+                <div class="job-item_text">
+                  <h3><span class="job-list__title">Данафлекс</span><span class="job-item_period">Ноябрь 2020 - Март 2021</span></h3>
+                  <p class="paragraph position"> <span class="label_bold">Должность: </span><span class="label">Web разработчик</span></p>
+                  <p class="paragraph stack">    <span class="label_bold">Стек: </span><span class="label">Vue.js, Laravel, CSS, PHP, SQL, Bootstrap</span></p>
+                  <p class="paragraph achiev"> <span class="label_bold">Достижения: </span>
+                    <span class="label">
+                      Разработка портала для компании на Laravel + Vue.js.
+                      Взаимодействовал с аналитиками для разработки сложных графиков с огромными данными на chart.js. 
+                      Работал и с фронтом, и с бэком.
+                    </span></p>
+                  <footer class="job-list-item_footer"> 
+                    <ul class="company-info-list">                      
+                      <li class="company-info-list_item"><a class="company-info_link" href="https://danaflex-group.com/ru" target="_blank" rel="noopener">Сайт</a></li>
+                    </ul>
+                  </footer>
+                </div>
+              </li>
+              <li class="job-list_item bars-group">
+                <div class="job-item_text">
+                  <h3><span class="job-list__title">ДК Мик</span><span class="job-item_period">Октябрь 2021 - Февраль 2022</span></h3>
+                  <p class="paragraph position"> <span class="label_bold">Должность: </span><span class="label">Frontend разработчик</span></p>
+                  <p class="paragraph stack">    <span class="label_bold">Стек: </span><span class="label">Vue.js, Laravel, SASS, Postgres, Docker</span></p>
+                  <p class="paragraph achiev"> <span class="label_bold">Достижения: </span>
+                    <span class="label">
+                      Разработка портала недвижимости, верстка по макетам Figma, интеграция с API. 
+                      Взаимодействие в команде с разработчиками, дизайнерами. Вел проект в Gitlab.
+                      Руководил всеми it процессами, проводил собеседования.
+                    </span></p>
+                  <footer class="job-list-item_footer"> 
+                    <ul class="company-info-list">                      
+                      <li class="company-info-list_item"><a class="company-info_link" href="http://guideprop.space/" target="_blank" rel="noopener">Сайт</a></li>
+                    </ul>
+                  </footer>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer section contacts-section section_bg-blue hidden" id="contacts"> 
+      <div class="section-wrapper">
+        <div class="section__title-wrapper">
+          <h2 class="section__title">Контакты</h2>
+        </div>
+        <ul class="contacts-list">          
+          <li class="contacts-list_item"><a class="label__bold email" href="mailto:amir.ibragimov13@mail.ru">Email</a></li>
+          <li class="contacts-list_item"><a class="label__bold" href="https://t.me/amiribr" target="_blank" rel="noopener">Telegram</a></li>
+          <li class="contacts-list_item"><a class="label__bold" href="https://github.com/mirych" target="_blank" rel="noopener">GitHub</a></li>
+        </ul>
+      </div>
+      <div class="copyright">Copyright &#169; 2022 Ибрагимов Амир </div>
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-app.js" defer></script>
+    <script src="https://www.gstatic.com/firebasejs/6.2.4/firebase-firestore.js" defer></script>
+    <script src="./js/main.min.js" defer></script>
+  </body>
+</html>
