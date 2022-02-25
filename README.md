@@ -1,1 +1,1 @@
-# mirych.github.io
+# Сайт-визитка https://mirych.github.io/
